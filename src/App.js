@@ -1,13 +1,13 @@
 import React from 'react';
 import Header from './components/header';
-import TextNav from './components/nav';
+import CarouselNavBar from './components/carrossel';
 import './App.css';
 
 function App() {
   return (
     <div>
       <Header />
-      <TextNav />
+      <CarouselNavBar />
     </div>
   );
 }
