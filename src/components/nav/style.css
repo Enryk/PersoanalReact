@@ -1,0 +1,11 @@
+.NavText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#ffffff;
+    height: 310px;
+}
+
+.NavImg {
+    background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1));
+}
