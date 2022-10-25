@@ -1,96 +1,124 @@
 import React, { useState } from 'react';
 import {
-    Carousel,
-    CarouselItem,
-    CarouselControl,
-    CarouselIndicators,
-    CarouselCaption,
+  Carousel,
+  CarouselItem,
+  CarouselControl,
+  CarouselIndicators,
+  CarouselCaption,
 } from 'reactstrap';
 
-const items = [
-    {
-        src: 'https://picsum.photos/id/123/1200/400',
-        altText: 'Slide 1',
-        caption: 'Slide 1',
-        key: 1,
+import  './style.css'
 
-    },
-    {
-        src: 'https://picsum.photos/id/456/1200/400',
-        altText: 'Slide 2',
-        caption: 'Slide 2',
-        key: 2,
-    },
-    {
-        src: 'https://picsum.photos/id/678/1200/400',
-        altText: 'Slide 3',
-        caption: 'Slide 3',
-        key: 3,
-    },
+const items = [
+  {
+    id: 1,
+    altText: 'slide 1',
+    caption: 'O corpo alcança o que a mente acredita.',
+  },
+  {
+    id: 2,
+    altText: 'slide 2',
+    caption: 'A disciplina é a ponte entre metas e realizações.',
+  },
+  {
+    id: 3,
+    altText: 'slide 3',
+    caption: 'O seu maior projeto deve ser você!',
+  },
+  {
+    id: 4,
+    altText: 'slide 4',
+    caption: 'Apaixone-se por cuidar de você mesmo.',
+  },
+  {
+    id: 5,
+    altText: 'slide 5',
+    caption: 'Não tem sensação melhor do que se superar a cada dia.',
+  },
+  {
+    id: 6,
+    altText: 'slide 6',
+    caption: 'Todo progresso acontece fora da zona de conforto.',
+  },
+  {
+    id: 7,
+    altText: 'slide 7',
+    caption: 'Não limite seus desafios, desafie seus limites.',
+  },
+  {
+    id: 8,
+    altText: 'slide 7',
+    caption: 'Seja mais forte que suas desculpas.',
+  },
 ];
 
-function CarouselNavBar(args) {
-    const [activeIndex, setActiveIndex] = useState(0);
-    const [animating, setAnimating] = useState(false);
+function ImagemCarousel(props) {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [animating, setAnimating] = useState(false);
 
-    const next = () => {
-        if (animating) return;
-        const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
-        setActiveIndex(nextIndex);
-    };
+  const next = () => {
+    if (animating) return;
+    const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
+    setActiveIndex(nextIndex);
+  };
 
-    const previous = () => {
-        if (animating) return;
-        const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
-        setActiveIndex(nextIndex);
-    };
+  const previous = () => {
+    if (animating) return;
+    const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
+    setActiveIndex(nextIndex);
+  };
 
-    const goToIndex = (newIndex) => {
-        if (animating) return;
-        setActiveIndex(newIndex);
-    };
+  const goToIndex = (newIndex) => {
+    if (animating) return;
+    setActiveIndex(newIndex);
+  };
 
-    const slides = items.map((item) => {
-        return (
-            <CarouselItem
-                onExiting={() => setAnimating(true)}
-                onExited={() => setAnimating(false)}
-                key={item.src}
-            >
-                <img src={item.src} alt={item.altText} />
-                <CarouselCaption
-                    captionText={item.caption}
-                    captionHeader={item.caption}
-                />
-            </CarouselItem>
-        );
-    });
-
+  const slides = items.map((item) => {
     return (
-        <Carousel
-            activeIndex={activeIndex}
-            next={next}
-            previous={previous}
-            {...args}
-        >
-            <CarouselIndicators
-                items={items}
-                activeIndex={activeIndex}
-                onClickHandler={goToIndex}
-            />
-            {slides}
-            <CarouselControl
-                direction="prev"
-                directionText="Previous"
-                onClickHandler={previous}
-            />
-            <CarouselControl
-                direction="next"
-                directionText="Next"
-                onClickHandler={next}
-            />
-        </Carousel>
+      <CarouselItem
+        className="custom-tag"
+        tag="div"
+        key={item.id}
+        onExiting={() => setAnimating(true)}
+        onExited={() => setAnimating(false)}
+      >
+        <CarouselCaption
+          className="text-danger"
+          captionHeader={item.caption}
+        />
+      </CarouselItem>
     );
+  });
+
+  return (
+    <div>
+      <style>
+        {`.custom-tag {
+              max-width: 100%;
+              height: 160px;
+              background: black;
+            }`}
+      </style>
+      <Carousel activeIndex={activeIndex} next={next} previous={previous}>
+        <CarouselIndicators
+          items={items}
+          activeIndex={activeIndex}
+          onClickHandler={goToIndex}
+        />
+        {slides}
+        <CarouselControl
+          direction="prev"
+          directionText="Previous"
+          onClickHandler={previous}
+        />
+        <CarouselControl
+          direction="next"
+          directionText="Next"
+          onClickHandler={next}
+        />
+      </Carousel>
+    </div>
+  );
 }
 
-export default CarouselNavBar;
+export default ImagemCarousel;
