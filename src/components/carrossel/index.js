@@ -88,7 +88,7 @@ function ImagemCarousel(props) {
         onExited={() => setAnimating(false)}
       >
         <CarouselCaption
-          className="text-light"
+          className="text-light text-font"
           captionText={item.altText}
           captionHeader={item.caption}
         />
@@ -97,14 +97,8 @@ function ImagemCarousel(props) {
   });
 
   return (
-    <div>
-      <style>
-        {`.custom-tag {
-              max-width: 100%;
-              height: 160px;
-              background: black;
-            }`}
-      </style>
+    <div className='custom-tag'>
+      
       <Carousel activeIndex={activeIndex} next={next} previous={previous}>
         <CarouselIndicators
           items={items}
