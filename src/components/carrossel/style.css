@@ -1,11 +1,13 @@
-.text-danger {
+.text-light {
     background-color: rgb(0, 0, 0);
     margin-bottom: 15px;
     text-transform: uppercase;
     text-decoration: overline;
-    color: aliceblue;
+    
 }
 
-.items {
+.item {
     color: aliceblue;
+    font-size: 10px;
 }
+

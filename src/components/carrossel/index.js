@@ -12,43 +12,48 @@ import  './style.css'
 const items = [
   {
     id: 1,
-    altText: 'slide 1',
+    //altText: 'slide 1',
     caption: 'O corpo alcança o que a mente acredita.',
   },
   {
     id: 2,
-    altText: 'slide 2',
+   //altText: 'slide 2',
     caption: 'A disciplina é a ponte entre metas e realizações.',
   },
   {
     id: 3,
-    altText: 'slide 3',
+    //altText: 'slide 3',
     caption: 'O seu maior projeto deve ser você!',
   },
   {
     id: 4,
-    altText: 'slide 4',
+    //altText: 'slide 4',
     caption: 'Apaixone-se por cuidar de você mesmo.',
   },
   {
     id: 5,
-    altText: 'slide 5',
+    //altText: 'slide 5',
     caption: 'Não tem sensação melhor do que se superar a cada dia.',
   },
   {
     id: 6,
-    altText: 'slide 6',
+    //altText: 'slide 6',
     caption: 'Todo progresso acontece fora da zona de conforto.',
   },
   {
     id: 7,
-    altText: 'slide 7',
+    //altText: 'slide 7',
     caption: 'Não limite seus desafios, desafie seus limites.',
   },
   {
     id: 8,
-    altText: 'slide 7',
+    //altText: 'slide 8',
     caption: 'Seja mais forte que suas desculpas.',
+  },
+  {
+    id: 9,
+    altText: 'não pode reclamar do escuro.',
+    caption: `Quem não se levanta para acender a luz,`,
   },
 ];
 
@@ -83,7 +88,8 @@ function ImagemCarousel(props) {
         onExited={() => setAnimating(false)}
       >
         <CarouselCaption
-          className="text-danger"
+          className="text-light"
+          captionText={item.altText}
           captionHeader={item.caption}
         />
       </CarouselItem>
