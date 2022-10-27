@@ -1,5 +1,12 @@
 .imgLogo {
     justify-content: center!important;
-    width: 360px;
+    width: 280px;
     height: auto;
+}
+
+@media (max-width:800px) {
+    .navbar, .container {
+        justify-content:space-around!important;
+    }
+
 }

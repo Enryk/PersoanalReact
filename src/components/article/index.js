@@ -1,7 +1,8 @@
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
-import Buttons from '../../buttons';
-import ImgArticle from '../../img/article';
+// import Buttons from '../../buttons';
+// import ImgArticle from '../../img/article';
+import Novotesto from '../navbar';
 
 import  './style.css'
 
@@ -11,8 +12,8 @@ function ContainerOutsideExample() {
       <Navbar expand="lg" variant="light">
         <Container className=''>
           <Navbar.Brand>
-            <Buttons />
-            <ImgArticle />
+            <Novotesto />
+            {/* <Buttons /> */}
           </Navbar.Brand>
         </Container>
       </Navbar>
