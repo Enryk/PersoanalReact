@@ -1,24 +1,14 @@
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar';
-// import Buttons from '../../buttons';
-// import ImgArticle from '../../img/article';
-import Novotesto from '../navbar';
+import React from "react";
+import NavbarCards from "../../cards";
+import Butao from "../../buttons";
 
-import  './style.css'
-
-function ContainerOutsideExample() {
-  return (
-    <Container>
-      <Navbar expand="lg" variant="light">
-        <Container className=''>
-          <Navbar.Brand>
-            <Novotesto />
-            {/* <Buttons /> */}
-          </Navbar.Brand>
-        </Container>
-      </Navbar>
-    </Container>
-  );
+const Article = () => {
+    return (
+        <div>
+        <NavbarCards />
+        <Butao />
+        </div>
+    );
 }
 
-export default ContainerOutsideExample;
+export default Article;
