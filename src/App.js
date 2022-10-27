@@ -1,13 +1,15 @@
 import React from 'react';
 import Header from './components/header';
-import ImagemCarousel from './components/carrossel';
+// import ImagemCarousel from './components/carrossel';
+import UncontrolledExample from './components/article';
 import './App.css';
 
 function App() {
   return (
     <div>
       <Header />
-      <ImagemCarousel />
+      {/* <ImagemCarousel /> */}
+      <UncontrolledExample />
     </div>
   );
 }

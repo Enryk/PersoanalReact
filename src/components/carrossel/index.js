@@ -12,48 +12,43 @@ import  './style.css'
 const items = [
   {
     id: 1,
-    //altText: 'slide 1',
-    caption: 'O corpo alcança o que a mente acredita.',
+    altText: 'O corpo alcança o que a mente acredita.',
+    caption: '',
   },
   {
     id: 2,
-   //altText: 'slide 2',
-    caption: 'A disciplina é a ponte entre metas e realizações.',
+    altText: 'A disciplina é a ponte entre metas e realizações.',
+    caption: '',
   },
   {
     id: 3,
-    //altText: 'slide 3',
-    caption: 'O seu maior projeto deve ser você!',
+    altText: 'O seu maior projeto deve ser você!',
+    caption: '',
   },
   {
     id: 4,
-    //altText: 'slide 4',
-    caption: 'Apaixone-se por cuidar de você mesmo.',
+    altText: 'Apaixone-se por cuidar de você mesmo.',
+    caption: '',
   },
   {
     id: 5,
-    //altText: 'slide 5',
-    caption: 'Não tem sensação melhor do que se superar a cada dia.',
+    altText: 'Não tem sensação melhor do que se superar a cada dia.',
+    caption: '',
   },
   {
     id: 6,
-    //altText: 'slide 6',
-    caption: 'Todo progresso acontece fora da zona de conforto.',
+    altText: 'Todo progresso acontece fora da zona de conforto.',
+    caption: '',
   },
   {
     id: 7,
-    //altText: 'slide 7',
-    caption: 'Não limite seus desafios, desafie seus limites.',
+    altText: 'Não limite seus desafios, desafie seus limites.',
+    caption: '',
   },
   {
     id: 8,
-    //altText: 'slide 8',
-    caption: 'Seja mais forte que suas desculpas.',
-  },
-  {
-    id: 9,
-    altText: 'não pode reclamar do escuro.',
-    caption: `Quem não se levanta para acender a luz,`,
+    altText: 'Seja mais forte que suas desculpas.',
+    caption: '',
   },
 ];
 
