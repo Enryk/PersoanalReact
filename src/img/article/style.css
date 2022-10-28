@@ -1,7 +1,44 @@
 .imgLogo {
-    padding-left: 5px;
-    margin: 5px;
-    width: 280px;
-    height: auto;
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 240px;
+    height: 295.953px;
     background-position: center;
+    float: left;
+}
+
+.img1 {
+    display: flex;
+    margin-left: 10px;
+    width: 240px;
+    height: 295.953px;
+    float: left;
+}
+
+.img2 {
+    display: flex;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 240px;
+    height: 295.953px;
+    float: left;
+}
+
+.imgespace {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media (max-width:770px) {
+    .img1 {
+        display: none;
+    }
+}
+
+@media (max-width:520px) {
+    .img2 {
+        display: none;
+    }
 }

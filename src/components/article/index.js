@@ -1,12 +1,12 @@
 import React from "react";
-// import NavbarCards from "../../cards";
+import NavbarCards from "../../cards";
 import Botao from "../../buttons";
 
 const Article = () => {
     return (
         <div>
-        {/* <NavbarCards /> */}
         <Botao />
+        <NavbarCards />
         </div>
     );
 }
