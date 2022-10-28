@@ -1,18 +1,20 @@
-import Button from 'react-bootstrap/Button';
+import React from 'react';
+import  './style.css'
 
-function Butao() {
+function Botao() {
   return (
-    <>
-      <Button variant="outline-primary">Primary</Button>{' '}
-      <Button variant="outline-secondary">Secondary</Button>{' '}
-      <Button variant="outline-success">Success</Button>{' '}
-      <Button variant="outline-warning">Warning</Button>{' '}
-      <Button variant="outline-danger">Danger</Button>{' '}
-      <Button variant="outline-info">Info</Button>{' '}
-      <Button variant="outline-light">Light</Button>{' '}
-      <Button variant="outline-dark">Dark</Button>
-    </>
+    <section className="section">
+        <header className="linkPag">
+            <div className="btn">
+                <button><a className='link' href="https://wa.me/5535999772226?text=Olá,%20eu%20gostaria%20de%20marcar%20uma%20avaliação%20com%20você.">Exercite em Casa</a></button>
+                
+                <button><a className='link' href="https://wa.me/5535999772226?text=Olá,%20eu%20gostaria%20de%20marcar%20uma%20avaliação%20com%20você.">Calcule seu IMC</a></button>
+                
+                <button><a className='link' href="https://wa.me/5535999772226?text=Olá,%20eu%20gostaria%20de%20marcar%20uma%20avaliação%20com%20você.">Contactar Personal</a></button>
+            </div>
+        </header>
+    </section>
   );
 }
 
-export default Butao;
+export default Botao;

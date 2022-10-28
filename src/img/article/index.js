@@ -6,7 +6,7 @@ import  './style.css'
 function ImgArticle ()  {
     return (
         <img
-          className="imgLogo displayfix"
+          className="imgLogo"
           src={logo}
           alt="logo"
         />

@@ -7,11 +7,6 @@ const NavbarCards = () => {
         <Card >
           <Card.Body>
             <ImgArticle />
-            <ImgArticle />
-            <ImgArticle />
-            <ImgArticle />
-            <ImgArticle />
-            <ImgArticle />
           </Card.Body>
         </Card>
         </div>

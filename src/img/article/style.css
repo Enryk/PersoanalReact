@@ -3,14 +3,5 @@
     margin: 5px;
     width: 280px;
     height: auto;
-}
-
-.card {
-    align-items: center;
-}
-
-@media (min-width: 1213px) {
-    .imgLogo {
-        margin-left: 75px;
-    }
+    background-position: center;
 }
