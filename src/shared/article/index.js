@@ -1,11 +1,11 @@
 import React from "react";
-import NavbarCards from "../../cards";
-import Botao from "../../buttons";
+import NavbarCards from "../cards";
+import Botoes from "../buttons";
 
 const Article = () => {
     return (
         <div>
-        <Botao />
+        <Botoes />
         <NavbarCards />
         </div>
     );
