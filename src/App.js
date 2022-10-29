@@ -1,11 +1,11 @@
 import React from 'react';
-import Main from './components/pag_inicial';
+import MainScreen from './screens/main';
 import './App.css';
 
 function App() {
   return (
     <div>
-      <Main />
+      <MainScreen />
     </div>
   );
 }
