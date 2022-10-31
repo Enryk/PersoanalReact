@@ -7,8 +7,8 @@ import Exercicios from './components/pag_exercicio';
 function App() {
   return (
     <div>
-      {/* <MainScreen /> */}
-      <Exercicios />
+      <MainScreen />
+      {/* <Exercicios /> */}
     </div>
   );
 }
