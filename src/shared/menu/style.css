@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+
+:root {
+    --font-style:'Nunito Sans', sans-serif;
+}
+
 .MenuLabel {
     align-items: center;
     padding: 10px;
@@ -10,8 +16,33 @@
     font-family: consolas;
 }
 
-.Menu {
-    color: aqua;
+ul {
     display: flex;
-    justify-content: end;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 10px 0;
+    border-radius: 10px;
+    border: 0.1px solid #099FFF;
+    background-color: #18181B;
+    box-shadow: 0 4px 8px 0 #00FFFF, 0 6px 20px 0 rgba(0, 0, 0.19);
+}
+
+li {
+    margin: auto;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+li:after {
+    display: block;
+}
+
+li:hover::after {
+    transform: scaleX(10);
 }
