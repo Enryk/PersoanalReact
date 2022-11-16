@@ -1,12 +1,14 @@
 import React from 'react';
 import TextExercicios from '../../shared/exercicios';
-import Header from '../../shared/header';
+// import Header from '../../shared/header';
+import HeaderMenu from '../../shared/menu';
 
 
 function Exercicios() {
     return (
         <div>
-            <Header />
+            {/* <Header /> */}
+            <HeaderMenu />
             <TextExercicios />
         </div>
     );
