@@ -32,14 +32,14 @@ ul {
     list-style: none;
     padding: 10px 0;
     border-radius: 10px;
-    border: 0.1px solid #099FFF;
+    border: 0.1px solid #c8ff00;
     background-color: #18181B;
-    box-shadow: 0 4px 8px 0 #00FFFF, 0 6px 20px 0 rgba(0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 #c8ff00, 0 6px 20px 0 rgba(0, 0, 0.19);
 }
 
 li {
     margin: auto;
-    color: white;
+    color: rgb(200, 255, 0);
     font-size: 20px;
     cursor: pointer;
 }
