@@ -5,12 +5,12 @@ const HeaderMenu = () => {
     return (
         <div>
             <span className="MenuLabel">VINICIUS ÁVILA PERSONAL TRAINER</span>
-            <span>
+            <div className="div-menu">
                 <ul className="Menu-ul">
                     <li>Home</li>
                     <li>Calculo IMC</li>
                 </ul>
-            </span>
+            </div>
         </div>
     );
 }

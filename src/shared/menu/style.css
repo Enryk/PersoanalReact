@@ -16,6 +16,11 @@
     font-family: consolas;
 }
 
+.div-menu {
+    display:flex;
+    justify-content: center
+}
+
 ul {
     display: flex;
     align-items: center;
