@@ -1,6 +1,4 @@
-const form = document.querySelector('#formulario'); // capturou o formulario
-
-function CalculaICM () {
+    const form = document.querySelector('#formulario'); // capturou o formulario
     form.addEventListener('submit', function (event) { // adicionou um evento no formulario 
         event.preventDefault(); // nao vai deixar o formulario ser enviado
         const inputPeso = event.target.querySelector('#peso'); // captorou os dados do input
@@ -75,8 +73,3 @@ function CalculaICM () {
         p.innerHTML = msg;
         resultado.appendChild(p);
     }
-
-    return CalculaICM;
-}
-
-export default CalculaICM;

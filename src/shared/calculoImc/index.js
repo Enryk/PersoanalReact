@@ -1,6 +1,7 @@
 import React, {Fragment} from "react";
 import ImgCalculoIMC from "../img/calculoIMC";
-import CalculaICM from "./calculo";
+
+<script src="./calculo.js"></script>
 
 
 const Calula = () => {
@@ -32,7 +33,7 @@ const Calula = () => {
             <div id="resultado"></div>
         </section>
 
-        {/* <CalculaICM /> */}
+        
         </Fragment>
     );
 }
